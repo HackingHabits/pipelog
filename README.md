@@ -12,14 +12,19 @@ or "Completed successfully".
 The final document will look like:
 
 >   {
+
 >     "my.wonderful.pipeline.for.item.1" : {
+
 >        "events" : [
 >                     "pipeline process 1": "success",
 >                     "pipeline process 2": "success",
 >                     "pipeline process 3": "failed"
 >                    ]
+
 >      },
+
 >     "my.wonderful.pipeline.for.item.2" : {
+
 >        "events" : [
 >                     "pipeline process 1": "success",
 >                     "pipeline process 2": "success",
@@ -27,7 +32,9 @@ The final document will look like:
 >                     "pipeline process 4": "success",
 >                     "pipeline process 5": "success"
 >                    ]
+
 >      }    
+
 >   }
    
 One can include tracebacks for these analysis. The document then looks like:
