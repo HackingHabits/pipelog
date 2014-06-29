@@ -11,9 +11,6 @@ or "Completed successfully".
 
 The final document will look like:
 
->
->   {
-
 >     "my.wonderful.pipeline.for.item.1" : {
 
 >        "events" : [
@@ -36,14 +33,11 @@ The final document will look like:
 
 >      }    
 
->   }
->
 
    
 One can include tracebacks for these analysis. The document then looks like:
 
->   {
->
+
 >     "my.wonderful.pipeline.for.item.1" : {
 >
 >        "events" : [
@@ -52,8 +46,7 @@ One can include tracebacks for these analysis. The document then looks like:
 >                     "pipeline process 3": {"state": "failed", "traceback": "All the wonderful traceback",
 >                    ]
 >
->      },
->
+>      }
 >   }
 
 
