@@ -18,7 +18,6 @@ The final document will look like:
 >                     "pipeline process 2": "success",
 >                     "pipeline process 3": "failed"
 >                    ]
->        
 >      },
 >     "my.wonderful.pipeline.for.item.2" : {
 >        "events" : [
