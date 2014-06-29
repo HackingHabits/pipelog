@@ -20,7 +20,6 @@ The final document will look like:
 >                    ]
 >        
 >      },
->      
 >     "my.wonderful.pipeline.for.item.2" : {
 >        "events" : [
 >                     "pipeline process 1": "success",
