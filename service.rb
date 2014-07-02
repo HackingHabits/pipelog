@@ -1,8 +1,7 @@
 require 'em-websocket'
 require "message/processor"
-require "message/types/acomplish"
-require "message/types/expectation"
-require "message/types/notes"
+require "message/types/todolist"
+require "message/types/task"
 require "backend/elasticsearch"
 require "backend/redis"
 require "backend/store"

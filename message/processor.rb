@@ -16,12 +16,10 @@ module Message
       begin
         puts "received #{message['type']}"
         # Determine message type
-        if message['type'] == 'expectation'
-          m = Message::Types::Expectation.new(message)
-        elsif  message['type'] == 'accomplish'
-          m = Message::Types::Accomplish.new(message)
-        elsif message['type'] == 'notes'
-          m = Message::Types::Notes.new(message)
+        if message['type'] == 'todolist'
+          m = Message::Types::TodoList.new(message)
+        elsif message['type'] == 'task'
+          m = Message::Types::Task.new(message)
         end
 
         # Index the message
