@@ -1,6 +1,6 @@
 module Message
   module Types
-    class TodoList
+    class Logfile
 
       def initialize(msg)
         @msg = msg
@@ -10,15 +10,15 @@ module Message
       def exists?
         @db.get(id = @msg['key'])
       end
-	
+
       def doc()
         # Generates the document to be indexed
         # from @msg
 
         data = {
-          key: @msg["key"],
-          tags: @msg["tags"],
-          timestamp: Time.now.strftime("%Y-%m-%d %H:%M:%S")
+            key: @msg["key"],
+            tags: @msg["tags"],
+            timestamp: Time.now.strftime("%Y-%m-%d %H:%M:%S")
         }
 
         data
@@ -26,7 +26,7 @@ module Message
 
       def index()
         if @msg['command'] == 'create'
-          unless todolist = exists?
+          unless logfile = exists?
             # The list does not exist
             # create it!
             @db.index @msg['key'],  body: JSON.dump(doc)

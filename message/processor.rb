@@ -16,10 +16,10 @@ module Message
       begin
         puts "received #{message['type']}"
         # Determine message type
-        if message['type'] == 'todolist'
-          m = Message::Types::TodoList.new(message)
-        elsif message['type'] == 'task'
-          m = Message::Types::Task.new(message)
+        if message['type'] == 'logfile'
+          m = Message::Types::Logfile.ne  w(message)
+        elsif message['type'] == 'log'
+          m = Message::Types::Log.new(message)
         end
 
         # Index the message
